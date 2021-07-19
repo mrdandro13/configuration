@@ -1,0 +1,16 @@
+#!/bin/bash
+alias ls='exa --color=always --group-directories-first'
+alias l='exa -l --color=always --group-directories-first'
+alias ll='l'
+alias la='exa -la --color=always --group-directories-first' 
+
+# rust replacement
+alias cat='bat'
+alias grep='rg'
+
+alias vi='$(which vim)'
+alias vim='nvim'
+
+# naviage to directories with ranger
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
