@@ -8,9 +8,10 @@ alias la='exa -la --color=always --group-directories-first'
 alias cat='bat'
 alias grep='rg'
 
-alias vi='$(which vim)'
-alias vim='nvim'
-
 # naviage to directories with ranger
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
+# set terminal tab names
+function title() {
+    echo -e "set title: $1\033]0;$@\007"
+}
