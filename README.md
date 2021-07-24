@@ -1,7 +1,7 @@
 # Configuration files for Linux
 
+- kitty
 - bash
 - vim
-- neovim
 - VScode
 - starship prompt
