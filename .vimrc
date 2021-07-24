@@ -5,8 +5,9 @@
 " |_.__/ \__,_|___/_|\___|   \_/ |_|_| |_| |_|
 
 call plug#begin('~/.vim/plugged')
-    Plug 'arcticicestudio/nord-vim'
     Plug 'itchyny/lightline.vim'
+    Plug 'junegunn/seoul256.vim'
+    Plug ''tpope/vim-surround'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'ycm-core/YouCompleteMe'
@@ -17,7 +18,8 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-colorscheme nord
+set background=dark
+colorscheme seoul256
 set laststatus=2
 
 let g:lightline = {
@@ -93,3 +95,5 @@ let mapleader = " "
 
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
+
+hi Normal guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
